@@ -16,6 +16,18 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SignIn::class.java)
             startActivity(intent)
         }
+
+        val button2 = findViewById<Button>(R.id.sign_in_button_activity2)
+        button2.setOnClickListener{
+            val intent = Intent(this, DashBoard::class.java)
+            startActivity(intent)
+        }
+
+        val button3 = findViewById<Button>(R.id.sign_in_button_activity3)
+        button3.setOnClickListener{
+            val intent = Intent(this, SignUp::class.java)
+            startActivity(intent)
+        }
     }
 
 
