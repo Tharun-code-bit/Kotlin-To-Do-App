@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">KotlinTo-DoApp</string>
+    <string name="agree_content">
+        This is a simple TO-DO Application with cloud storage <br/>
+        All the activities added here will be saved in cloud storage<br/>
+        Please accept our terms to proceed
+    </string>
 </resources>
