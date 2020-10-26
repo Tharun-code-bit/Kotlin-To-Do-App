@@ -1,0 +1,2 @@
+com/example/kotlinto_doapp/BuildConfig.java
+ com.example.kotlinto_doapp.BuildConfig
