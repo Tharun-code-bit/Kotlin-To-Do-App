@@ -1,6 +1,6 @@
 <h2>To-Do Application </h2>
 
-This is a simple cloud based To-Do Mobile Application
+This is a simple cloud based To-Do Mobile Application using Firebase
 
 Features:
   <ol type="1">
