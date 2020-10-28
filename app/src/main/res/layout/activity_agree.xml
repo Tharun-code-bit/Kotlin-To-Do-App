@@ -7,37 +7,41 @@
     tools:context=".AgreeActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/agree_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="10dp"/>
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
+        android:id="@+id/agreeCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="75dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
         android:text="I Accept and Continue"
-        android:id="@+id/agreeCheck"
-        android:textSize="15dp"/>
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Button
+        android:id="@+id/continueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Continue"
-        android:id="@+id/continueButton"
+        android:layout_marginTop="24dp"
         android:background="@android:color/holo_blue_dark"
+        android:clickable="false"
         android:padding="10dp"
+        android:text="Continue"
         android:textColor="@android:color/white"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="5dp"
-        android:clickable="false"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agreeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
