@@ -1,11 +1,17 @@
 package com.example.kotlinto_doapp
 
+
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+
 
 class MainActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,10 +26,10 @@ class MainActivity : AppCompatActivity() {
           }
 
         signup.setOnClickListener{
-            var intent =Intent(this,SignupActivity::class.java)
+            var intent =Intent(this,SignupAcvtivity::class.java)
             startActivity(intent)
         }
 
-
+        Firebase.auth.signOut()
     }
 }

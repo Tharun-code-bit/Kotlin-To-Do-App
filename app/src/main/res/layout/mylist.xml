@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <TextView  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:textSize="24dp"
+
+        android:textColor="#32CD32"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:ems="24"
+
+        />
+
+
+
