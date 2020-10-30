@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.kotlinto_doapp">
 
     <application
@@ -9,19 +10,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ToDoActivity"></activity>
-        <activity android:name=".AgreeActivity"></activity>
-        <activity android:name=".SigninActivity"></activity>
-        <activity android:name=".SignupActivity"></activity>
-        <activity android:name=".DashBoardActivity"></activity>
-        <activity android:name=".StartActivity">
+        <activity android:name=".HomePage"  android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".AgreeActivity" />
+        <activity android:name=".SigninActivity" />
+        <activity android:name=".SignupAcvtivity" />
+        <activity android:name=".DashBoardActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".StartActivity"
+           >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+    <activity android:name=".MainActivity"/>
+
+
     </application>
 
 </manifest>

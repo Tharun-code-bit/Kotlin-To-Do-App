@@ -11,6 +11,7 @@
         android:layout_width="318dp"
         android:layout_height="47dp"
         android:layout_marginBottom="20dp"
+
         android:ems="10"
         android:hint="Enter Email"
         android:inputType="textEmailAddress"
@@ -26,17 +27,20 @@
         android:ems="10"
         android:hint="Enter password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/sign_up2"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/sign_up2"
+        android:id="@+id/sign_in2"
         android:layout_width="153dp"
         android:layout_height="56dp"
         android:backgroundTint="@android:color/holo_blue_dark"
+        android:foregroundTint="#0A80E8"
+        android:shadowColor="#0926C6"
+        android:background="@drawable/rouned_edittext"
         android:text="Sign in"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"

@@ -20,7 +20,7 @@ class AgreeActivity : AppCompatActivity() {
         }
 
         continueButton.setOnClickListener{
-            var intent = Intent(this,MainActivity::class.java)
+            var intent = Intent(this,HomePage::class.java)
             startActivity(intent)
         }
     }
